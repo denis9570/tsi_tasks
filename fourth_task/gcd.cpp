@@ -1,6 +1,6 @@
 #include<stdio.h>
 #include<iostream>
-
+ 
 using namespace std;
 
 // Greatest Common Divisor (Euclidean algorithm implementation)
