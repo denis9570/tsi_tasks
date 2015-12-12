@@ -1,6 +1,5 @@
 #include <iostream>
 #include <math.h>
-#include <stdio.h>
 using namespace std;
 
 // this code is distributed under the GNU GPL license
@@ -21,7 +20,7 @@ int main()
     }
     
     for (int idx = 0; idx < SIZE; ++idx) {   
-        printf("elements[%d] %d\n", idx, elements[idx]);
+        cout << "elements[" << idx << "] " << elements[idx] << endl;
     }
     
     // requiring input from user
@@ -45,8 +44,7 @@ int main()
     // outputing result
     
     cout << "This is the count of elements that are less than your number:" << result_count << endl;
-    // [2 5 13 48 7 9 3]
-    // c = 8
+    
         
     return 0;
 }

@@ -1,6 +1,5 @@
 #include <iostream>
 #include <math.h>
-#include <stdio.h>
 #include <time.h>
 using namespace std;
 
@@ -42,13 +41,14 @@ int main()
 {
 	cout << "This program will find the sum of all array elements after last negative" << endl;
 	
-	// double* number_list = make_array_simple();
-	double* number_list = make_array_hard();
+    double* number_list = make_array_simple();
+	// double* number_list = make_array_hard();
 	
 	for (int i = 0; i < SIZE; ++i) {
 		double number = number_list[i];
-		printf("%d\n", int(number));
-	}
+		cout << number << " ";
+    }
+	cout << endl;
 
 	int last_negative_index = -1;
 	for (int i = 9; i >= 0; --i){
@@ -66,8 +66,5 @@ int main()
 	cout << "this is the sum of all array elements after last negative:" << sum << endl;
 	
 	system("PAUSE");
-
-	main();
-
-	return 0;
+    return 0;
 }
