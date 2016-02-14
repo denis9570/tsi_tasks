@@ -23,8 +23,6 @@ int main()
     остроугольным*/
     
     float x, y, z;
-    cout << "enter triangle sides" << endl;
-    cin >> x >> y >> z;
     
     if (x >= y+z) {
         cout << "can't: x is too large" << endl;
@@ -41,12 +39,10 @@ int main()
         float zy_angle = get_angle(z, y, x);
         float zx_angle = get_angle(z, x, y);
         
-        cout << "angles: " << xy_angle << " " << zy_angle << " " << zx_angle << endl;
-        
         if (xy_angle < 0.5 && zy_angle < 0.5 && zx_angle < 0.5){
-            cout << "Yes, triangle is sharp-angled" << endl;    
+            printf("Yes, triangle is sharp-angled \n");    
         } else {
-            cout << "No, triangle is not sharp-angled" << endl;
+            printf("No, triangle is not sharp-angled \n");
         }       
     }
     
